@@ -19,3 +19,22 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@media (min-width: 1000px) {
+  .desktop-nav {
+    display: flex !important; /* Show the nav links */
+  }
+  .hamburger-icon {
+    display: none !important; /* Hide the hamburger menu */
+  }
+}
+
+/* Hover effects scoped to Selected Works */
+.selected-works .work-card:hover {
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+.selected-works .work-card:hover .work-overlay {
+  background-color: rgba(0, 0, 0, 0.6); /* Light black overlay */
+  opacity: 1; /* Show overlay and text */
+}
